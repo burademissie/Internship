@@ -23,3 +23,6 @@ class TaskView(viewsets.ModelViewSet):
         serializer = self.get_serializer(task, many=True)
         return Response(serializer.data)
     
+
+def home(request):
+    return render(request,'index.html')

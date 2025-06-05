@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      padding: 40px;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .link-box {
+      margin: 15px 0;
+    }
+    .link-box a {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .link-box a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background-color: #ecf0f1;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>👋 Welcome to the Task Manager API</h1>
+    <p>This is a Django REST Framework-based API for creating, viewing, updating, and deleting tasks.</p>
+
+    <h2>📌 Quick Navigation</h2>
+    <div class="link-box">
+      🔗 <a href="/api/tasks/" target="_blank">View All Tasks</a>
+    </div>
+    <div class="link-box">
+      ✅ <a href="/api/tasks/completed/" target="_blank">View Completed Tasks</a>
+    </div>
+    <div class="link-box">
+      ⏳ <a href="/api/tasks/pending/" target="_blank">View Pending Tasks</a>
+    </div>
+
+    <h2>⚙️ How It Works</h2>
+    <p>Use the <code>/api/tasks/</code> endpoint to manage your tasks with methods like <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code>.</p>
+    <p>Each task includes:</p>
+    <ul>
+      <li><strong>title</strong> (required)</li>
+      <li><strong>description</strong></li>
+      <li><strong>completed</strong> (true or false)</li>
+    </ul>
+
+    <p>Example JSON to create a task:</p>
+    <pre><code>{
+  "title": "Learn Django",
+  "description": "Complete DRF tutorial",
+  "completed": false
+}</code></pre>
+  </div>
+</body>
+</html>
